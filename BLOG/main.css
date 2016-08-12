@@ -1,0 +1,585 @@
+/*basic styles*/
+
+html{
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+ul ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/*border arangment*/
+
+#top, #bottom, #left, #right
+ {
+	background: #000000;
+	position: fixed;
+}
+#left, #right {
+	top: 0; bottom: 0;
+	width: 15px;
+}
+#left { 
+	left: 0;
+}
+#right{ 
+	right: 0;
+ }
+		
+#top, #bottom{
+	left: 0; right: 0;
+	height: 15px;
+}
+#top { 
+	top: 0;
+}
+#bottom { 
+	bottom: 0;
+}
+
+
+/*main header alignment*/
+
+.container{
+	 margin: 50px 0 0 90px;
+     width: 89%;
+     float: left;
+}
+#headleft{
+	float: left;
+	width: 70%;
+
+}
+#headleft header{
+	font-size:30px;
+}
+#headleft footer{
+	padding-top:5px;
+	color:#778899;
+}
+#headright 
+{
+	padding-top: 0;
+	float: right;
+    width: 29%;
+    position: relative;
+  }
+
+#headright li{
+	float: left;
+	display: inline;
+	margin: 0;
+	padding-left: 30px;
+	position: relative;
+}
+/*drop down list navigabale bar*/
+.dropbtn{
+		padding: 0;
+		border:none;
+		font-size: 15px;
+		shape-outside: none;
+		box-shadow: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #ccc;
+    visibility: visible;
+}
+
+.dropdown-content a:hover
+{
+	background-color: #998877
+}
+.dropdown:hover .dropdown-content
+ {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #FFFFFF;
+}
+/*Content of the Blog*/
+#contentleft
+{
+	float: left;
+	width: 75%;
+	margin-top: 20px;
+
+}
+/*content right sidebar*/
+#sidebar{
+	float: right;
+	width: 20%;
+}
+hr{
+	display: block;
+   	border-color: #000000;
+    border-width: 2px;
+    margin-top: 20px;
+}
+#sidebar h1{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#search
+{
+	display: inline-block;
+}
+#serach input[type="search"]
+{
+	float:left;
+	height:25px;
+}
+#serach input[type="image"]{
+	 width:25px;
+	 height:25px;
+	 background-color:#000000;
+	 padding-left:0;
+	  margin:0;
+	 float:left;
+}
+#sidebar input[type="email"]{
+	 width:195px;
+}
+#sidebar input[type="button"]
+{
+	background-color:black;
+	color:#ffffff;
+	font-size:15px;
+	border:none;
+	height:35px;
+	width:80px; 
+	border-radius:5px;
+}
+/*Content of the middle data and left image of blog*/
+#contentleftleftdata{
+	float: left;
+	width: 15%;
+}
+#contentleftcenterdata{
+	float: right;
+	width: 70%;
+}
+#contentleftleftdataalign
+{
+	padding: 90px 0 0 9px;
+	width: 175px;
+	float: left;
+
+}
+#contentleftleftdataalign img
+{
+
+	height:90px;
+	width:90px; 
+	border-radius: 50%;
+}
+#contentleftcenterdata a
+{
+	color: blue;
+}
+#text
+{
+	margin: 10px;
+}
+#heading{
+	padding: 0 0 0 9px;
+}
+/*social network shargings*/
+#sharingbutton{
+			
+			display: inline;		
+}
+#sharingbutton img{
+	width:20px;
+	height:20px;
+	float:left;
+	padding:0 2px 0 0;
+}
+#sharingbuttonfacebook{
+	border-radius: 10px;
+	box-shadow: 0;
+	height: 25px;
+	width: 110px;font-family: "Times New Roman", Times, serif;
+}
+
+#sharingbuttongmail{
+	border-radius: 10px;
+	box-shadow: 0;
+	height: 25px;
+    width: 110px;
+    font-family: "Times New Roman", Times, serif;
+}
+#sharingbuttontwiter{
+	border-radius: 10px;
+	box-shadow: 0;
+	height: 25px;
+	width: 110px;
+	font-family: "Times New Roman", Times, serif;
+}
+#sharingbuttonetc{
+	border-radius: 10px;
+	box-shadow: 0;
+	height: 25px;
+	width: 110px;
+	font-family: "Times New Roman", Times, serif;
+}
+#sharingbuttonstar{
+	border-radius: 3px;
+	box-shadow: 0;
+	height: 25px;
+	font-size:19px;
+	width: 80px;
+	font-family: "Times New Roman", Times, serif;
+}
+/*static page of blog likers */
+#likethis{
+	 padding:20px 0 0 0;
+}
+#likethis img{
+	width:20px;
+	height:20px;
+}
+#bloglikeslist{
+	color: blue;
+	
+}
+#bloglikes{
+	font-size: 10px;
+}
+#authorpost{
+	display: inline;
+
+}
+#imgb
+{
+ border-radius: 50%;
+	height:60px;
+	width:60px;
+}
+#authorphoto{
+	float: left;
+	width: 10%;
+}
+#authordisc{
+	float: right;
+	width:85%;
+}
+#postschanges{
+	float: left;
+	padding: 0;
+	margin: 25px;
+}
+#postschanges hr{
+	width: 830px;
+}
+/*Comments of the blog*/
+#comments{
+	float: left;
+	margin-top:10px;
+    padding:5px 10px 0 20px;
+    border-radius:10px;
+}
+#comments h3
+{
+    margin-top:90px;
+}
+#comments input[type="text"],#comments input[type="email"]{
+    border:#ccc 1px solid;
+    border-radius:5px;
+    height:20px;
+    padding:3px;
+    width:97%;
+}
+#comments textarea
+{
+    border:#ccc 1px solid;
+    border-radius:5px;
+    padding:3px;
+    width:97%;
+}
+#comments button
+{
+	border-radius: 15px;
+}
+
+#comments{
+	display: inline;
+}
+
+#hello{
+	border-radius: 10px;
+	color: red;
+}
+#usercomments{
+	display: inline;
+	color: red;
+	font-size: 15px;
+}
+
+#crossimage{
+	width: 15px;
+	height: 15px;
+
+	text-align: end;
+	
+	
+}
+#buttonall{
+margin-left: 100%;
+}
+
+/*media queries*/
+
+
+@media only screen and (max-width: 900px)
+{
+		#headleft{
+			width: 45%;
+			float: left;
+		}
+
+		#headright{
+			width: 55%;
+			float: right;
+			padding-top: 0;
+		}
+		#contentleft
+		{
+			float: left;
+			width: 55%;
+			margin-top: 20px;
+		}
+		#sidebar{
+			float: right;
+			width: 35%;
+			
+		}
+		hr{
+			display: block;
+   			border-color: #000000;
+    		border-width: 2px;
+   			 margin-top: 10px;
+   			 width: 215px;
+   			 float: left;
+		}
+		#search
+		{
+			display: inline-block;
+		}
+		#contentleftcenterdata{
+			float: right;
+			width: 60%;
+		}
+		#contentleftleftdataalign
+		{
+			padding: 90px 0 0 9px;
+			width: 90px;
+			float: left;
+
+		}
+		#contentleftleftdataalign img
+		{
+
+			height:90px;
+			width:90px; 
+			border-radius: 50%;
+		}
+		#contentleftcenterdata a
+		{
+		color: blue;
+		}
+		#authorphoto{
+			float: left;
+			width: 9%;
+		}
+		#authordisc{
+			float: right;
+			width:75%;
+		}
+
+		#postschanges{
+			float: left;
+			padding: 0;
+			margin: 25px;
+			margin-bottom: 10px;
+		}
+		#postschanges hr{
+			width: 530px;
+		}
+}
+/*media screen width max 500px;*/
+@media only screen and (max-width: 500px)
+{
+		#headleft{
+			width: 45%;
+			float: left;
+		}
+
+		#headright{
+			width: 55%;
+			float: right;
+			padding-top: 0;
+		}
+		#contentleft
+		{
+			float: left;
+			width: 55%;
+			margin-top: 20px;
+		}
+		#sidebar{
+			float: right;
+			width: 40%;
+			
+		}
+		hr{
+			display: block;
+   			border-color: #000000;
+    		border-width: 2px;
+   			 margin-top: 10px;
+   			 width: 215px;
+   			 float: left;
+		}
+		#search
+		{
+			display: inline-block;
+		}
+		#contentleftcenterdata{
+			float: right;
+			width: 60%;
+		}
+		#contentleftleftdataalign
+		{
+			padding: 90px 0 0 9px;
+			width: 90px;
+			float: left;
+
+		}
+		#contentleftleftdataalign img
+		{
+
+			height:90px;
+			width:90px; 
+			border-radius: 50%;
+		}
+		#contentleftcenterdata a
+		{
+		color: blue;
+		}
+		#authorphoto{
+			float: left;
+			width: 9%;
+		}
+		#authordisc{
+			float: right;
+			width:75%;
+		}
+
+		#postschanges{
+			float: left;
+			padding: 0;
+			margin: 25px;
+			margin-bottom: 10px;
+		}
+		#postschanges hr{
+			width: 530px;
+		}
+}
+
+
+/*media screen @1010px*/
+@media only screen and (max-width: 1010px)
+{
+		#headleft{
+			width: 45%;
+			float: left;
+		}
+
+		#headright{
+			width: 55%;
+			float: right;
+			padding-top: 0;
+		}
+		#contentleft
+		{
+			float: left;
+			width: 55%;
+			margin-top: 20px;
+		}
+		#sidebar{
+			float: right;
+			width: 40%;
+			
+		}
+		hr{
+			display: block;
+   			border-color: #000000;
+    		border-width: 2px;
+   			 margin-top: 10px;
+   			 width: 215px;
+   			 float: left;
+		}
+		#search
+		{
+			display: inline-block;
+		}
+		#contentleftcenterdata{
+			float: right;
+			width: 60%;
+		}
+		#contentleftleftdataalign
+		{
+			padding: 90px 0 0 9px;
+			width: 90px;
+			float: left;
+
+		}
+		#contentleftleftdataalign img
+		{
+
+			height:90px;
+			width:90px; 
+			border-radius: 50%;
+		}
+		#contentleftcenterdata a
+		{
+		color: blue;
+		}
+		#authorphoto{
+			float: left;
+			width: 9%;
+		}
+		#authordisc{
+			float: right;
+			width:75%;
+		}
+
+		#postschanges{
+			float: left;
+			padding: 0;
+			margin: 25px;
+			margin-bottom: 10px;
+		}
+		#postschanges hr{
+			width: 530px;
+		}
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script src="main.js"></script>
+<body>
+<!--Header Page of the Blog-->
+<header id="mainheader">
+		<div class="container">
+				<div id="headleft"><!--Header part of blog name and blog navgation lists-->
+					<header>chaitanya</header>
+					<footer>peddada</footer>
+				</div><!--headleft-->
+				<div id="headright">
+					<nav id="listingnavbar">
+						<ul id="topnav">
+							<li><a href="about.html">About</a></li>
+							<li> <div class="dropdown"><!--Drop Down wise navgations-->
+											Categories
+  								<button class="dropbtn">&vee;</button>
+  									<div class="dropdown-content">
+   								 		<a href="Java.html">Java</a>
+   										<a href="Javascript.html">Javascript</a>
+    									 <a href="Android.html">Android</a>
+ 									</div>
+							</li>
+							<li><a href="Home.html">Latest</a></li>
+						</ul><!--listof data-->
+					</nav><!--nav -->
+				</div><!-- headright-->
+		</div><!--container-->
+</header><!--mainheader closecontent-->
+
+<!--Content of the Header-->
+<header id="headercontent">
+		<div class="container">
+			<div id="contentleft">
+					<h1 id="heading">what is java ?</h1>
+					<div id="contentleftleftdata">
+						<center id="contentleftleftdataalign">
+							<img src="author.jpg" id="imgc">
+							<p id="text">chaitanya<br>
+							july 23 2016<br>
+							start</p>
+						</center> 
+					</div><!--contentleftleftdata-->
+					<div id="contentleftcenterdata">
+					<header>
+						<p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented,and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" 
+						<h2>Java OverView</h2>
+						<p> Java programming language was originally developed by Sun Microsystems which was initiated by James Gosling and released in 1995 as core component of Sun Microsystems' Java platform .The latest release of the Java Standard Edition is Java SE 8. With the advancement of Java and its widespread popularity, multiple configurations were built to suite various types of platforms. Ex: J2EE for Enterprise Applications, J2ME for Mobile Applications.
+						The new J2 versions were renamed as Java SE, Java EE and Java ME respectively. Java is guaranteed to be Write Once, Run Anywhere.</p>
+						Sun released the first public implementation as Java 1.0 in 1995. It promised Write Once, Run Anywhere(WORA), providing no-cost run-times on popular platforms.On 13 November 2006, Sun released much of Java as free and open source software under the terms of the GNU General Public License (GPL).On 8 May 2007, Sun finished the process, making all of Java's core code free and open-source, aside from a small portion of code to which Sun did not hold the copyright.</p>
+						</p>
+					</header>
+					<br>
+					<content  id="sharingsocial">
+						<div id="sharingbutton">	
+							<button id="sharingbuttonfacebook" onclick="facebook()">
+		
+									<img src="facebook.png" >facebook
+								</button>
+								<button id="sharingbuttongmail" onclick="gmail()">
+		
+									<img src="gmail.png">gmail
+								</button>
+								<button id="sharingbuttontwiter" onclick="twitter()">
+		
+									<img src="twitter.png">twitter
+								</button>
+								<button id="sharingbuttontwiter" onclick="linkedin()">
+		
+									<img src="in.png">linkedin
+								</button>
+								<button id="sharingbuttonetc" onclick="google()">
+		
+									<img src="etc.png">etc
+								</button>
+						</div>
+						<div id="likethis">
+							<p> Like this</p>
+							<button id="sharingbuttonstar">
+								<img src="star.gif">Like
+							</button>
+							<img src="author.jpg">
+							<img src="author.jpg"><br>
+							<div id="bloglikes">
+								<p ><span id="bloglikeslist">2bloggers</span>likethis</p>
+							</div>					
+						</div>
+						<br>
+						<div id="authorpost">
+							<div id="authorphoto">
+								<img src="author.jpg" id="imgb" >
+							</div>
+							<div id="authordisc">
+								<p>auhtor:chaitanya<br><a href="Home.html">view more posts</a></p>
+							</div>
+						</div><!-- authorpost--><br><br>
+					</content><!--sharingsocial--> 
+				</div><!--contentleftcenterdata-->
+			</div><!--contentleft-->
+			
+			<div id="sidebar">
+				<hr>
+				<div class="clearfix"></div>
+				<div id="serach">		
+					<input type="search" id="sidesearchtext" placeholder="search">
+					<input type="image" src="serach.png" onclick="sidesearch()">
+				</div>
+				<br>
+				<br>
+				<br>
+				<hr>
+				<h1>SUBSCRIBE VIA EMAIL</h1>
+				<input type="email" name="" placeholder="Email Address"><br><br>
+				<input type="button" name="" value="SIGN UP">
+			</div><!--sidebar-->
+		</div><!--container-->
+	</header><!--headerContent-->
+	<div class="container">
+		<footer id="postschanges">
+			<hr id="foothr">
+			<header><a href="about.html">Previous</a></header>
+			<footer>About</footer>
+			<hr class="foothr">
+			<header><a href="Javascript.html">Next</a></header>
+			<footer>Javascript</footer>
+			<hr id="foothr">
+		
+		</footer><!--postschanges-->
+		<footer id="comments">
+				<h3>Leave Comment</h3>
+						<form>
+							<p><label>Name: </label><input type="text" id="name"></p>
+							<p><label>Email: </label><input type="email" id="Email"></p>
+							<p><label>Comment: </label><textarea id="textarea"></textarea></p>
+							<button type='button' id='textareabutton' onclick="addcomment()">Add Comment</button>
+						</form>
+		</footer><!--comments-->
+	</div>
+	<br>
+
+	<div class="container">
+ 		 
+  		<div id='usercomments' >
+
+  		</div>
+
+	</div>
+	<div id="left"></div>
+	<div id="right"></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
+
+	</body>
+</html>
